@@ -1,0 +1,272 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 2.3rem;
+  font-size: 1rem;
+}
+
+hr {
+  border-width: 0.10rem;
+  border-color: white;
+  width: 20%;
+}
+
+
+
+/**************************** General Sections *************************/
+
+/* .container-fluid {
+    padding: 3% 10% 7%;
+} */
+
+.top-section {
+    background-image: url("/ArtSite\ -\ Copy/Images/pexels-adrien-olichon-2387793.jpg");
+    color: white;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+/**************************** Nav Section *************************/
+.container-fluid.nav-contain {
+    padding: 3% 7% 5%;
+}
+
+.nav-item.nav-selectors {
+    padding: 0 1rem;
+}
+
+.nav-item.nav-checkout {
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-family: 'Montserrat', 'Monsieur La Doulaise';
+    font-weight: 300;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.65);
+}
+
+
+/**************************** Top Section *************************/
+.top-heading {
+  font-family: 'Ubuntu', 'Monsieur La Doulaise';
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: rgb(201, 192, 192);
+  text-align: center;
+}
+
+.container-fluid.row-contain {
+    padding: 3% 12% 7%;
+}
+
+.row-section {
+    margin-top: 1%;
+}
+
+.title-image {
+    width: 10%;
+    filter: drop-shadow(34px 34px 17px #000);
+    position: absolute;
+    left: 25%;
+    transform: scaleX(-1);
+}
+
+.title-image-two {
+    width: 13%;
+    filter: drop-shadow(34px 34px 17px #000);
+    position: absolute;
+    right: 20%;
+    top: 32%;
+
+}
+
+.sonar-emitter .nav-link {
+  height: 100px;
+  width: 100px;
+}
+
+
+/**************************** Middle Section *************************/
+.middle-section {
+    text-align: center;
+    background-color:rgb(255, 255, 255) ;
+    color: #fff;
+    margin: 5%;
+}
+
+.carousel-item {
+    padding: 7% 10%;
+    height: 400px;
+}
+
+#test-carousel {
+   margin: 5%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+  }
+
+
+
+/**************************** Footer Section *************************/
+.footer {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+
+
+/**************************** Sonic Background Section *************************/
+  /* Prevent scrollbars to appear when waves go out of bound */
+  .sonar-wrapper {
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    padding: 4rem;
+  }
+  
+  /* The circle */
+  .sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 9999px;
+    border: solid 2px rgb(255, 255, 255);
+  }
+  
+  /* the 'wave', same shape and size as its parent */
+  .sonar-wave {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 75%;
+    height: 75%;
+    border-radius: 9999px;
+    background-color: rgb(66, 66, 92);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /*
+    Animate!
+    NOTE: add browser prefixes where needed.
+  */
+  .sonar-wave {
+    animation: sonarWave 2s linear infinite;
+  }
+  
+  @keyframes sonarWave {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+
+  /**************************** Special Fonts *************************/
+  
+  @font-face {
+    font-family: titleFont;
+    src: url(/ArtSite\ -\ Copy/Fonts/SlimJoe.otf);
+  }
+  
+  .specialFont {
+    font-family: titleFont;
+    letter-spacing: 0.1em;
+    /* font-weight: 100; */
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    /* text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    color: white;
+  }
+
+
+/**************************** Middle Gallery Section *************************/
+
+  .btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #image-gallery .modal-footer{
+    display: block;
+  }
+  
+  .thumb{
+    margin-top: 65px;
+    margin-bottom: 15px;
+  }
+
+
+
+
+/**************************** Sonic Background Section *************************/
+
+  @media (max-width:1028px) {
+    .title-image-two {
+      visibility: hidden;
+    }
+
+    .title-image {
+      visibility: hidden;
+    }
+}
+
+
+@media (max-width:775px) {
+
+  .specialFont {
+    font-size: 5vw;
+  }
+
+  .top-heading {
+    font-size: 3vw;
+  }
+
+  hr {
+    width: 35%;
+  }
+
+  .container-fluid.row-contain {
+    position: static;
+    margin-top: 25%;
+
+  }
+}
