@@ -253,11 +253,11 @@ hr {
 @media (max-width:775px) {
 
   .specialFont {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .top-heading {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   hr {
@@ -266,7 +266,24 @@ hr {
 
   .container-fluid.row-contain {
     position: static;
-    margin-top: 25%;
+    margin-top: 35%;
 
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+  }
+}
+
+@media (max-width:550px) {
+  
+  .container-fluid.row-contain {
+    position: static;
+    margin-top: 45%;
   }
 }
